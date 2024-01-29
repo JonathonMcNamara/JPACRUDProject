@@ -1,6 +1,7 @@
 package com.skilldistillery.pokemon.data;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -53,6 +54,13 @@ public class PokemonCollectorDAOImpl implements PokemonCollectorDAO {
 			em.merge(updateCard);
 		}
 		return updateCard;
+	}
+
+	@Override
+	public List<PokemonCard> getAllCards() {
+		String jpql = "SELECT cards FROM PokemonCard cards";
+		List<PokemonCard> cards = em.createQuery(jpql, PokemonCard.class).getResultList();
+		return cards;
 	}
 
 }

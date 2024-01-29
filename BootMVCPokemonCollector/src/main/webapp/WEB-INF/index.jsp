@@ -18,6 +18,10 @@
 	<div>
 		<a href="EnterAPokemonCard">Enter A Pokemon Card</a>
 	</div>
+	<br>
+	<div>
+		<a href="getAllCards.do">Get Entire Collection</a>
+	</div>
 	
 	
 

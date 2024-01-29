@@ -109,7 +109,7 @@ body {
 					Card</button>
 				<br>
 				<!-- Link to return to the home page -->
-				<a href="" class="btn btn-primary">Return to Home Page</a> <br>
+				<a href="home.do" class="btn btn-primary">Return to Home Page</a> <br>
 				<br>
 			</form>
 		</div>
